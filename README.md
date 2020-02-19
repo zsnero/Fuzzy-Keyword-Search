@@ -2,4 +2,4 @@
 Fuzzy Keyword Search over cloud 
 
 
-Project I'm currently working on.
+Currently I'm working on this project. I'll keep this updated.
