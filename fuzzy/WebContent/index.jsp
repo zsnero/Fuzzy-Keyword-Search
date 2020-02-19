@@ -89,21 +89,53 @@
 }
 
 
-</style>
+<!-- </style>
  
+ <script>  
+function validateform(){  
+var name=document.foorm.name.value;  
+var password=document.foorm.password.value;  
+  
+if (name==null || name==""){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+
+function validateformreg()
+{
+	var name=document.fooorm.name.value;  
+	var password=document.fooorm.password.value;  
+	  
+	if (name==null || name==""){  
+	  alert("Name can't be blank");  
+	  return false;  
+	}else if(password.length<6){  
+	  alert("Password must be at least 6 characters long.");  
+	  return false;  
+	  }  
+
+} -->
+</script> 
+ 
+
  
 </head>
-<body>
+
+<!-- <body> -->
 <!-- partial:index.partial.html -->
 <body>
 	<header role="banner">
-		<div id="cd-logo"><a href="#0"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_1.svg" alt="Logo"></a></div>
+		<!-- <div id="cd-logo"><a href="#0"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/cd-logo_1.svg" alt="Logo"></a></div> -->
 
 		<nav class="main-nav">
 			<ul>
 				<!-- insert more links here -->
 				<li><a class="cd-signin" href="#0">Sign in</a></li>
-				<li><a class="cd-signup" href="#0">Sign up</a></li>
+				<li><a class="cd-signup" href="#1">Sign up</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -112,21 +144,21 @@
 		<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
 			<ul class="cd-switcher">
 				<li><a href="#0">Sign in</a></li>
-				<li><a href="#0">New account</a></li>
+				<li><a href="#1">New account</a></li>
 			</ul>
 
-			<div id="cd-login"> <!-- log in form -->
-				<form class="cd-form">
+			<div id="cd-login"> 
+				<form class="cd-form" action="login" method="post" name="fooorm" onsubmit="return validateformreg()" >
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
-						<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+						<input class="full-width has-padding has-border" id="signin-email" type="email" name="email" placeholder="E-mail">
 						<span class="cd-error-message">Error message here!</span>
 					</p>
 
 					<p class="fieldset">
 						<label class="image-replace cd-password" for="signin-password">Password</label>
-						<input class="full-width has-padding has-border" id="signin-password" type="text"  placeholder="Password">
-						<a href="#0" class="hide-password">Hide</a>
+						<input class="full-width has-padding has-border" id="signin-password" type="password" name="password"  placeholder="Password">
+						<a href="#0" class="hide-password">Show</a>
 						<span class="cd-error-message">Error message here!</span>
 					</p>
 
@@ -136,53 +168,57 @@
 					</p>
 
 					<p class="fieldset">
-						<input class="full-width" type="submit" value="Login">
+						<input type="submit" class="full-width"  value="Login">
 					</p>
-				</form>
+				</form></div>
 				
-				<p class="cd-form-bottom-message"><a href="#0">Forgot your password?</a></p>
-				<!-- <a href="#0" class="cd-close-form">Close</a> -->
-			</div> <!-- cd-login -->
+				<p class="cd-form-bottom-message" style="visibility:hidden"><a href="#0">Forgot your password?</a></p>
+				<a href="#0" class="cd-close-form">Close</a>
+			
 
-			<div id="cd-signup"> <!-- sign up form -->
-				<form class="cd-form">
+ 			
+ 
+			 <div id="cd-signup"> 
+				<form  class="cd-form"  action="Register" method="post" name="foorm" onsubmit="return validateform()" >
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">Username</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username" name="name">
 						<span class="cd-error-message">Error message here!</span>
-					</p>
-
-					<p class="fieldset">
+				</p>
+				<p class="fieldset">
 						<label class="image-replace cd-email" for="signup-email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail" name = "email">
-						<span class="cd-error-message">Error message here!</span>
-					</p>
-
-					<p class="fieldset">
+						<!-- <span class="cd-error-message">Error message here!</span> -->
+					
+</p>
+                        <p class="fieldset">
+				
 						<label class="image-replace cd-password" for="signup-password">Password</label>
 						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password" name = "password">
 						<a href="#0" class="hide-password">Hide</a>
-						<span class="cd-error-message">Error message here!</span>
-					</p>
+						<!-- <span class="cd-error-message">Error message here!</span> -->
 					
-					<p class="fieldset">
+				</p>
+				<p class="fieldset">	
+					
 					<label> User Type  </label> &nbsp;&nbsp;&nbsp;
 					<input type="radio" id="usrtype" name="user" value="1"> Admin &nbsp;&nbsp;&nbsp;
 					<input type="radio" id="usrtype" name="user" value="0"> User  &nbsp;&nbsp;&nbsp;
 					</p>
-
 					<p class="fieldset">
+
+			
 						<input type="checkbox" id="accept-terms">
 						<label for="accept-terms">I agree to the <a href="#0">Terms</a></label>
-					</p>
+					
+</p>
+				<p class="fieldset">
+					
+				<input type="submit"  class="full-width" value="Create Account" onclick="javascript:alert('Registration Successful');">
+				</p>
+				 					</form>
 
-					<p class="fieldset">
-						<input class="full-width has-padding" type="submit" value="Create account">
-					</p>
-				</form>
-
-				<!-- <a href="#0" class="cd-close-form">Close</a> -->
-			</div> <!-- cd-signup -->
+						</div> <!-- cd-signup -->
 
 			<div id="cd-reset-password"> <!-- reset password form -->
 				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>
@@ -213,7 +249,7 @@
     <li>
       <span class="fa fa-code"></span>
 
-      <h3>Wildcard Based</h3>
+      <h3>Wild card Based</h3>
       <p style=" text-align:center;"><br><br>We proposed to use an wildcard to denote edit operations at the same position.</p>
       <p style="text-align:center;">The wildcard based fuzzy set edits distance to solve the problems. </p>
     </li>
