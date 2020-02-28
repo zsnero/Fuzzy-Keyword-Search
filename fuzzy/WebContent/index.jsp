@@ -10,6 +10,44 @@
 <link rel="stylesheet" href="./style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
 
+<!-- Login form validation -->
+<script>
+function validateform(){
+	
+	var email = document.fooorm.email.value;
+	var password = document.fooorm.password.value;
+	if(email==""||email==null && password=="" || password==null)
+		{
+		alert("Fields cannot be empty");
+		return false;
+		}
+	
+	
+}
+</script>
+
+<!-- Registration form validation -->
+<script>
+function validateformreg(){
+	
+	var email = document.foorm.email.value;
+	var password = document.foorm.password.value;
+	var name = document.foorm.name.value;
+	if(email==""||email==null  && password==""||password==null && name=="" || name==null)
+		{
+		alert("Fields cannot be empty");
+		return false;
+		}
+	else
+		{
+		alert("Registration Successful");
+		}
+}  
+
+</script>
+
+
+
 <style>
 
 #sec {
@@ -89,9 +127,9 @@
 }
 
 
-<!-- </style>
+ </style>
  
- <script>  
+<!--  <script>  
 function validateform(){  
 var name=document.foorm.name.value;  
 var password=document.foorm.password.value;  
@@ -118,8 +156,8 @@ function validateformreg()
 	  return false;  
 	  }  
 
-} -->
-</script> 
+} 
+</script>  -->
  
 
  
@@ -148,7 +186,7 @@ function validateformreg()
 			</ul>
 
 			<div id="cd-login"> 
-				<form class="cd-form" action="login" method="post" name="fooorm" onsubmit="return validateformreg()" >
+				<form class="cd-form" action="login" method="post" name="fooorm" onsubmit="return validateform()" >
 					<p class="fieldset">
 						<label class="image-replace cd-email" for="signin-email">E-mail</label>
 						<input class="full-width has-padding has-border" id="signin-email" type="email" name="email" placeholder="E-mail">
@@ -179,7 +217,7 @@ function validateformreg()
  			
  
 			 <div id="cd-signup"> 
-				<form  class="cd-form"  action="Register" method="post" name="foorm" onsubmit="return validateform()" >
+				<form  class="cd-form"  action="Register" method="post" name="foorm" onsubmit="return validateformreg()" >
 					<p class="fieldset">
 						<label class="image-replace cd-username" for="signup-username">Username</label>
 						<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username" name="name">
@@ -194,8 +232,8 @@ function validateformreg()
                         <p class="fieldset">
 				
 						<label class="image-replace cd-password" for="signup-password">Password</label>
-						<input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password" name = "password">
-						<a href="#0" class="hide-password">Hide</a>
+						<input class="full-width has-padding has-border" id="signup-password" type="password"  placeholder="Password" name = "password">
+						<a href="#0" class="hide-password">Show</a>
 						<!-- <span class="cd-error-message">Error message here!</span> -->
 					
 				</p>
@@ -214,11 +252,13 @@ function validateformreg()
 </p>
 				<p class="fieldset">
 					
-				<input type="submit"  class="full-width" value="Create Account" onclick="javascript:alert('Registration Successful');">
+				<input type="submit"  class="full-width" value="Create Account">
+<!-- 				 onclick="javascript:alert('Registration Successful'); -->
 				</p>
 				 					</form>
 
 						</div> <!-- cd-signup -->
+					
 
 			<div id="cd-reset-password"> <!-- reset password form -->
 				<p class="cd-form-message">Lost your password? Please enter your email address. You will receive a link to create a new password.</p>

@@ -95,13 +95,14 @@ public class Login extends HttpServlet {
 				session.setMaxInactiveInterval(5*60);
 				if(usrtype==1)
 				{
+					System.out.println(usrtype);
 					RequestDispatcher rd1 = request.getRequestDispatcher("adminhome.jsp");
 					rd1.forward(request, response);
 				}
 				else if(usrtype==0)
 				{
 					
-					
+					 System.out.println(usrtype);
 					  RequestDispatcher rd2 = request.getRequestDispatcher("userhome.jsp");
 					  rd2.forward(request,response);
 					 
@@ -109,16 +110,16 @@ public class Login extends HttpServlet {
 				
 				else
 				{
-					out.print("Username or Password is incorrect");
-			    	RequestDispatcher rd4= request.getRequestDispatcher("index.jsp");
-			    	rd4.include(request,response);
+					System.out.print("Username or Password is incorrect");
+			    	RequestDispatcher rd3= request.getRequestDispatcher("pit.jsp");
+			    	rd3.include(request,response);
 				}
 			}
 			else
 			{
 				System.out.println("Password does not matches");
-				RequestDispatcher rd5= request.getRequestDispatcher("index.jsp");
-		    	rd5.include(request,response); 
+				RequestDispatcher rd4= request.getRequestDispatcher("pit.jsp");
+		    	rd4.include(request,response); 
 			}
 			
 			

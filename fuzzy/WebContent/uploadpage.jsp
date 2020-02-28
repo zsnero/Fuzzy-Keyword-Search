@@ -1,4 +1,37 @@
 <html>
+
+<!-- Form Validation  -->
+
+<script>  
+function validateform(){  
+var kw1=document.fooorm.kw1.value;  
+var descrip=document.fooorm.descrip.value;  
+var filename=document.fooorm.filename.value;
+var filetype=document.fooorm.filetype.value;
+if (kw1==null || kw1=="" && descrip==null || descrip=="" && filename==null || filename=="" && filetype=="Type" && descrip==null || descrip=="" )
+{  
+  alert("Fields can't be empty");  
+  return false;  
+}
+/* else
+	{
+	alert("Upload Successful")
+	} */
+}
+</script>
+
+<!-- <script>
+function validateform(){
+	var descrip=document.fooorm.descrip.value;
+	if(descrip==null || descrip=="")
+		{
+		alert("Description can't be empty");
+		}
+}
+</script>   -->
+
+
+
   <head>
   <title> Upload File </title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -10,7 +43,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- 
+ </head>
  <style>
  body {
   /* background-image: url(https://s22.postimg.cc/ngk0detjl/sea-3652697.jpg); */
@@ -90,13 +123,13 @@ font-size:12px;
   }
   
   
-  %> --%>
+  %>  --%>
 
 
   <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
   
-<!--   <script src="jquery-3.3.1.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
 <script >
 
 function readURL(input,LogId) {
@@ -111,12 +144,12 @@ reader.readAsDataURL(input.files[0]);
 $("#fileToUpload").change(function(){
 readURL(this,image);
 });
-</script> -->
+</script> 
 
 
 
 <body>
-<form class="uploadpage" action="uploadpage" method="post" name="fooorm" enctype="multipart/form-data">
+<form class="uploadpage" action="WriteArticles" method="post" name="fooorm" enctype="multipart/form-data" onsubmit="return validateform()">
 <br>
 <a href="index.jsp" class="btn" style="float:right;"> Log out </a>&nbsp;&nbsp;&nbsp;
 <a href="#" class="btn" style="float:left;" onclick="window.history.go(-1); return false;"> Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -139,33 +172,40 @@ readURL(this,image);
               </p>
               
               <p>
-              <input name="filename" style="color:black" id="searchTextField" type="text" style="width:200px" placeholder="File Name"><br>
+              <div>
+              <input name="filename" style="color:black" id="searchTextField" type="text" style="width:200px" size="50" placeholder="File Name"><br>
+              </div>
               <p>
             <br><hr>
             <p> File Type: </p>
               <p>
+              <div>
                 <select style="color:black;" name="filetype">
-  <option value="Type" >File Type</option>
+  <option value="Type">Visibility</option>
   <option value="Private">Private</option>
   <option value="Public">Public</option>
                 </select>
-
+                </div>
+                <div>
               <p>
-                <input name="kw1" style="color:black" id="searchTextField" type="text" style="width:200px" placeholder="Enter keyword"><br>
-                <input name="kw2" style="color:black" id="searchTextField" type="text" style="width:200px" placeholder="Enter keyword"><br>
-                <input name="kw3" style="color:black" id="searchTextField" type="text" style="width:200px" placeholder="Enter keyword"><br>
+              <br>
+                <input name="kw1" style="color:black" id="searchTextField" type="text" style="width:500px" size="50" placeholder="Enter keyword"><br>
+                <!-- <input name="kw2" style="color:black" id="searchTextField" type="text" style="width:200px" placeholder="Enter keyword"><br>
+                <input name="kw3" style="color:black" id="searchTextField" type="text" style="width:200px" placeholder="Enter keyword"><br> -->
               </p>
+              </div>
 <hr><br>
+<label for="descrip">Description:</label>
 <div>
- <label for="descrip">Description:</label>
-</div>
+ 
 <textarea name="description" id="descrip" rows="4" cols="50" style="color:black" style="align:center">
-
 </textarea> 
+</div>
 
               <p>
                 <br><br>
-                <input id="submitbutton" class="btn" type="submit" value="Submit" name="submit" onclick="javascript:alert('Upload Successful');">
+                <input id="submitbutton" class="btn" type="submit" value="Submit" name="submit">
+               <!--  onclick="javascript:alert('Upload Successful');" -->
               </p>
               <input type="hidden" name="timestamp">
 					

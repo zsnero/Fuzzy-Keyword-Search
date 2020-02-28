@@ -79,9 +79,10 @@ public class passwordreset extends HttpServlet {
 		/*if(op.equals(encpass)) {*/ //Need Fix 
 			
 				System.out.println("first if");
-				String pp = "update login set ENC_PASS = ?";
+				String pp = "update login set ENC_PASS = ? where email=?";
 				PreparedStatement psw = jdbcc.getPre(pp);
 				psw.setString(1,nep );
+				psw.setString(2, em);
 				int es = psw.executeUpdate();
 				
 				if(es>0)

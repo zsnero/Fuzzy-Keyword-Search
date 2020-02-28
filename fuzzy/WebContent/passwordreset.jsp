@@ -1,5 +1,24 @@
 <html>
 <head> <title> Password Reset </title></head>
+
+	<script>  
+
+function validateform(){  
+var oldpassword=document.fooorm.oldpassword.value;  
+var newpassword=document.fooorm.newpassword.value;  
+var confpassword=document.fooorm.confpassword.value;
+if (oldpassword==null || oldpassword=="" && newpassword==null || newpassword=="" && confpassword==null || confpassword=="" ){  
+  alert("Password can't be blank");  
+  return false;  
+}
+else{
+	alert("Password changed");
+}
+}
+</script> 
+
+
+
 <style>
 body {
   
@@ -247,7 +266,7 @@ function airTableResetPassword() {
     <label for="username-input" class="username-label">Old Password</label>
     <input type="text" id="username-input" autofocus>
   </div> -->
-<form action = "passwordreset" method="post">
+<form action = "passwordreset" method="post" name="fooorm" onsubmit="return validateform()">
 
   <div class="password">
     <label for="password-input" class="password-label" >Old Password</label>
@@ -272,7 +291,8 @@ function airTableResetPassword() {
    <div>
          <!-- <button class="back" onclick="window.location.href = 'logout.jsp';">Log out</button> -->
 
-   <button class="reset-password-button" value="Reset Password" name="resetbtn" onclick="javascript:alert('Password Changed');"> Reset Password </button>
+   <button class="reset-password-button" value="Reset Password" name="resetbtn"> Reset Password </button>
+   <!--  onclick="javascript:alert('Password Changed');" -->
     <!-- <input type="submit" value="Reset Password"/> -->
     </div>
     </div>
