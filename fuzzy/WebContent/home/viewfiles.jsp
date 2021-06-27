@@ -118,16 +118,16 @@ font-family:Candara;
 <th style="border:1px solid white;color:white;text-align:center;">File Name </th><th style="border:1px solid white;color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File Type</th><th style="border:1px solid white;color:white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;User</th>
 </tr>
 <tr>
-<td style="border:1px solid white;color:white;"> Alice in Wonderland </td><td style="border:1px solid white;color:white;">PRIVATE</td><td style="border:1px solid white;color:white;">Ann Treata Regina</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
+<td style="border:1px solid white;color:white;"> Alice in Wonderland </td><td style="border:1px solid white;color:white;">PRIVATE</td><td style="border:1px solid white;color:white;">Emi</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
 </tr>
 <tr>
-<td style="border:1px solid white;color:white;"> Assassin's Creed </td><td style="border:1px solid white;color:white;">PUBLIC</td><td style="border:1px solid white;color:white;">Sarath</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
+<td style="border:1px solid white;color:white;"> Assassin's Creed </td><td style="border:1px solid white;color:white;">PUBLIC</td><td style="border:1px solid white;color:white;">Taki</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
 </tr>
 <tr>
-<td style="border:1px solid white;color:white;"> Big Bang Theory </td><td style="border:1px solid white;color:white;">PUBLIC</td><td style="border:1px solid white;color:white;">Ann Treata Regina</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
+<td style="border:1px solid white;color:white;"> Big Bang Theory </td><td style="border:1px solid white;color:white;">PUBLIC</td><td style="border:1px solid white;color:white;">Emi</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
 </tr>
 <tr>
-<td style="border:1px solid white;color:white;"> Song of Ice and Fire </td><td style="border:1px solid white;color:white;">PRIVATE</td><td style="border:1px solid white;color:white;">Sarath</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
+<td style="border:1px solid white;color:white;"> Song of Ice and Fire </td><td style="border:1px solid white;color:white;">PRIVATE</td><td style="border:1px solid white;color:white;">Taki</td> <td> <a href="#" class="btn btn-success"> Download </a> </td> <td> <a href="#" class="btn btn-danger"> Delete </a> </td>
 </tr>
 </table>
 
