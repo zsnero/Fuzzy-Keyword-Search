@@ -119,10 +119,10 @@ font-family:Candara;
 <th style="border:4px solid white;color:white;text-align:center;"> Registered Users </th><th style="border:4px solid white;color:white;text-align:center;"> Uploads </th>
 </tr>
 <tr>
-<td style="border:4px solid white;color:white; text-align:center;"> Sarath </td><td style="border:4px solid white;color:white;text-align:center;"> 2 </td>
+<td style="border:4px solid white;color:white; text-align:center;"> Emi </td><td style="border:4px solid white;color:white;text-align:center;"> 2 </td>
 </tr>
 <tr>
-<td style="border:4px solid white;color:white; text-align:center;"> Ann Treata Regina </td><td style="border:4px solid white;color:white;text-align:center;"> 2 
+<td style="border:4px solid white;color:white; text-align:center;"> Taki </td><td style="border:4px solid white;color:white;text-align:center;"> 2 
 </td>
 </tr>
 <tr>
