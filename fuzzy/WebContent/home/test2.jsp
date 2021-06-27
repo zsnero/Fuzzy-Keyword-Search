@@ -363,20 +363,20 @@ Articles<span class="blue"></span> <span class="yellow">Table</span></h1>
 		<tr>
 			<td>Assassin's Creed</td>
 			<td>PRIVATE</td>
-			<td>Sarath KR</td>
+			<td>Emi</td>
 			<td><a href="#" class="button button-red">Download</a></td>
 			 
 		</tr>
 		<tr>
 			<td>Alice in Wonderland</td>
 			<td>PUBLIC</td>
-			<td>Ann Treata Regina</td>
+			<td>Emi</td>
 			<td><a href="#" class="button button-red">Download</a></td>
 		</tr>
 		<tr>
 			<td>Lord of the Rings</td>
 			<td>PRIVATE</td>
-			<td>Sarath KR</td>
+			<td>Taki</td>
 			<td><a href="#" class="button button-red">Download</a></td>
 		</tr>
     <tr>
@@ -388,13 +388,13 @@ Articles<span class="blue"></span> <span class="yellow">Table</span></h1>
     <tr>
 			<td>Harry Potter</td>
 			<td>PRIVATE</td>
-			<td>Sarath KR</td>
+			<td>Taki</td>
 			<td><a href="#" class="button button-red">Download</a></td>
 		</tr>
     <tr>
 			<td>Animal Farm</td>
 			<td>PUBLIC</td>
-			<td>Ann Treata Regina</td>
+			<td>Emi</td>
 			<td> <a href="#" class="button button-red">Download</a></td>
 		</tr>
 	</tbody>
